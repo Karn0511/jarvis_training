@@ -25,11 +25,9 @@ export class VenomService {
   }
 
   private connect() {
-    const protocol = globalThis.location.protocol === 'https:' ? 'wss:' : 'ws:';
-    const host = globalThis.location.hostname;
-    // If we're on port 4200 (Angular dev server), point to 8000 (FastAPI)
-    const port = globalThis.location.port === '4200' ? '8000' : globalThis.location.port;
-    const wsUrl = `${protocol}//${host}:${port}/ws/system-stream`;
+    // Direct connection to backend (proxy doesn't work reliably for WebSocket)
+    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const wsUrl = `${protocol}//localhost:4200/ws/system-stream`;
 
     console.log('Connecting to Neural Link:', wsUrl);
 
@@ -49,9 +47,7 @@ export class VenomService {
   }
 
   sendCommand(text: string) {
-    const host = globalThis.location.hostname;
-    const port = globalThis.location.port === '4200' ? '8000' : globalThis.location.port;
-    const apiUrl = `${globalThis.location.protocol}//${host}:${port}/api/command`;
-    return this.http.post(apiUrl, { text }).subscribe();
+    // Use relative URL with /api prefix for proxy
+    return this.http.post('/api/command', { text });
   }
 }

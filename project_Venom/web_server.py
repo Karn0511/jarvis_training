@@ -161,5 +161,5 @@ else:
 
 
 if __name__ == "__main__":
-    print("VENOM WEB SERVER STARTING ON PORT 8000...")
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    print("VENOM WEB SERVER STARTING ON PORT 4200...")
+    uvicorn.run(app, host="0.0.0.0", port=4200)
