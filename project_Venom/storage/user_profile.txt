@@ -1,0 +1,8 @@
+Name: Karn
+Role: Developer / Creator
+System: Project Venom Host
+Preferences:
+- Likes concise answers.
+- prefers Dark Mode.
+- Interested in AI, Quantum Computing, and System Architecture.
+- Wants Venom to be "Symbiotic" and "Protective".

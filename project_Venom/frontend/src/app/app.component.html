@@ -1,0 +1,148 @@
+<!-- ⚡ VENOM ULTIMATE GLASS MORPHISM INTERFACE -->
+<div class="venom-container">
+  <div class="venom-bg">
+    <div class="neural-grid"></div>
+  </div>
+
+  <!-- Premium Header with Black Navigation -->
+  <header class="glass-header">
+    <div class="header-content">
+      <div class="logo-section">
+        <div class="venom-logo">
+          <svg viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#ffd700;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <text x="50" y="70" text-anchor="middle" class="logo-text">V</text>
+          </svg>
+        </div>
+        <div class="title-block">
+          <h1>VENOM AI</h1>
+          <span class="subtitle">Neural Symbiotic Intelligence</span>
+        </div>
+      </div>
+
+      <!-- Luxury Status HUD -->
+      <div class="status-indicator">
+        <div class="status-core"></div>
+        <div class="status-info">
+          <span class="status-label">{{ state.status }}</span>
+          <span class="status-detail">{{ state.detail }}</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Machine Interface -->
+  <main class="main-grid">
+
+    <!-- Left: Vitals & Metrics -->
+    <aside class="left-panel">
+      <section class="glass-card">
+        <div class="card-header">
+          <h2>SYSTEM METRICS</h2>
+        </div>
+
+        <div class="vital-item">
+          <div class="vital-label">
+            <span>NEURAL LOAD</span>
+            <span>{{ state.vitals.cpu_percent || 0 }}%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" [style.width.%]="state.vitals.cpu_percent"></div>
+          </div>
+        </div>
+
+        <div class="vital-item">
+          <div class="vital-label">
+            <span>MEMORY BANK</span>
+            <span>{{ state.vitals.ram_percent || 0 }}%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" [style.width.%]="state.vitals.ram_percent"></div>
+          </div>
+        </div>
+
+        <div class="vital-item">
+          <div class="vital-label">
+            <span>SYNAPTIC ACTIVITY</span>
+            <span>{{ state.vitals.neural_activity || 0 }}%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" [style.width.%]="state.vitals.neural_activity || 50"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="glass-card" style="margin-top: 25px;">
+        <div class="card-header">
+          <h2>QUICK COMMANDS</h2>
+        </div>
+        <div class="quick-actions">
+          <button class="action-btn" (click)="quickCommand('status')">STATUS</button>
+          <button class="action-btn" (click)="quickCommand('scan room')">VISION</button>
+          <button class="action-btn" (click)="quickCommand('optimize')">BOOST</button>
+          <button class="action-btn" (click)="quickCommand('help')">INFO</button>
+        </div>
+      </section>
+    </aside>
+
+    <!-- Center: Main Neural Terminal -->
+    <section class="center-panel glass-card">
+      <div class="card-header">
+        <h2>NEURAL TERMINAL v4.0</h2>
+      </div>
+
+      <div class="terminal-output" #terminalOutput>
+        <div class="output-line" *ngFor="let line of history">
+          <span class="timestamp">{{ getTimestamp() }}</span>
+          <span class="output-text">> {{ line }}</span>
+        </div>
+        <div class="output-line" *ngIf="history.length === 0">
+          <span class="timestamp">{{ getTimestamp() }}</span>
+          <span class="output-text">> SYSTEM COLD BOOT COMPLETE...</span>
+        </div>
+      </div>
+
+      <div class="command-input-container">
+        <div class="input-wrapper">
+          <span class="prompt">CMD:</span>
+          <input
+            type="text"
+            [(ngModel)]="commandInput"
+            (keyup.enter)="submitCommand()"
+            placeholder="Interlink neural command..."
+            class="command-input">
+        </div>
+      </div>
+    </section>
+
+    <!-- Right: Activity & logs -->
+    <aside class="right-panel">
+      <section class="glass-card">
+        <div class="card-header">
+          <h2>LIVE DATA STREAM</h2>
+        </div>
+        <div class="terminal-output" style="height: 520px; font-size: 0.75rem;">
+          <div class="output-line" *ngFor="let act of recentActivities">
+            <span style="color: var(--color-gold);">[LOG]</span> {{ act.text }}
+          </div>
+          <div class="output-line"> <span style="color: var(--color-gold);">[LOG]</span> KUBERNETES SYNC: OK </div>
+          <div class="output-line"> <span style="color: var(--color-gold);">[LOG]</span> DOCKER LITE IMAGE: ACTIVE </div>
+          <div class="output-line"> <span style="color: var(--color-gold);">[LOG]</span> NEURAL LINK: STABLE </div>
+        </div>
+      </section>
+    </aside>
+
+  </main>
+
+  <!-- Premium Footer -->
+  <footer class="venom-footer">
+    <span>PROJECT VENOM :: NEURAL SYMBIOTE ARCHITECTURE</span>
+    <span>UPTIME: {{ getUptime() }} | SECURE CORE: ACTIVE</span>
+  </footer>
+</div>

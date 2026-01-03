@@ -1,0 +1,40 @@
+# Core Framework
+python-dotenv
+rich
+pydantic
+pydantic-settings
+aiohttp
+aiofiles
+fastapi
+uvicorn
+psutil
+
+# AI & Intelligence
+google-generativeai
+chromadb
+hugchat
+
+# Vision System
+ultralytics
+opencv-python-headless
+Pillow
+
+# Voice & Audio
+edge-tts
+faster-whisper
+pygame
+SpeechRecognition
+
+# Tools
+pyautogui
+pywhatkit
+
+# Dashboard
+# Dashboard
+# streamlit - Removed for Lite Architecture
+# networkx - Removed for Lite Architecture
+
+# Testing
+pytest
+pytest-cov
+httpx

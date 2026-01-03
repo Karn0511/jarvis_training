@@ -1,0 +1,928 @@
+
+================================================================================
+CRASH REPORT - 2026-01-03 00:15:34
+Restart Count: 1
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 11, in <module>
+    from brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\brain\router.py", line 1, in <module>
+    from brain.system_brain import VenomBrain
+  File "E:\Advanced Jarvis\project_Venom\brain\system_brain.py", line 10, in <module>
+    from core.config import config
+  File "E:\Advanced Jarvis\project_Venom\core\config.py", line 46, in <module>
+    print("\U0001f680 VENOM BOOST: Performance Optimizations Primed.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Karn\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 00:15:41
+Restart Count: 2
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 11, in <module>
+    from brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\brain\router.py", line 1, in <module>
+    from brain.system_brain import VenomBrain
+  File "E:\Advanced Jarvis\project_Venom\brain\system_brain.py", line 10, in <module>
+    from core.config import config
+  File "E:\Advanced Jarvis\project_Venom\core\config.py", line 46, in <module>
+    print("\U0001f680 VENOM BOOST: Performance Optimizations Primed.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Karn\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 00:15:47
+Restart Count: 3
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 11, in <module>
+    from brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\brain\router.py", line 1, in <module>
+    from brain.system_brain import VenomBrain
+  File "E:\Advanced Jarvis\project_Venom\brain\system_brain.py", line 10, in <module>
+    from core.config import config
+  File "E:\Advanced Jarvis\project_Venom\core\config.py", line 46, in <module>
+    print("\U0001f680 VENOM BOOST: Performance Optimizations Primed.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Karn\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 00:15:54
+Restart Count: 4
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 11, in <module>
+    from brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\brain\router.py", line 1, in <module>
+    from brain.system_brain import VenomBrain
+  File "E:\Advanced Jarvis\project_Venom\brain\system_brain.py", line 10, in <module>
+    from core.config import config
+  File "E:\Advanced Jarvis\project_Venom\core\config.py", line 46, in <module>
+    print("\U0001f680 VENOM BOOST: Performance Optimizations Primed.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Karn\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 00:16:00
+Restart Count: 5
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 11, in <module>
+    from brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\brain\router.py", line 1, in <module>
+    from brain.system_brain import VenomBrain
+  File "E:\Advanced Jarvis\project_Venom\brain\system_brain.py", line 10, in <module>
+    from core.config import config
+  File "E:\Advanced Jarvis\project_Venom\core\config.py", line 46, in <module>
+    print("\U0001f680 VENOM BOOST: Performance Optimizations Primed.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Karn\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 00:16:37
+Restart Count: 6
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 11, in <module>
+    from brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\brain\router.py", line 1, in <module>
+    from brain.system_brain import VenomBrain
+  File "E:\Advanced Jarvis\project_Venom\brain\system_brain.py", line 10, in <module>
+    from core.config import config
+  File "E:\Advanced Jarvis\project_Venom\core\config.py", line 46, in <module>
+    print("\U0001f680 VENOM BOOST: Performance Optimizations Primed.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Karn\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 00:16:44
+Restart Count: 7
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 11, in <module>
+    from brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\brain\router.py", line 1, in <module>
+    from brain.system_brain import VenomBrain
+  File "E:\Advanced Jarvis\project_Venom\brain\system_brain.py", line 10, in <module>
+    from core.config import config
+  File "E:\Advanced Jarvis\project_Venom\core\config.py", line 46, in <module>
+    print("\U0001f680 VENOM BOOST: Performance Optimizations Primed.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Karn\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 00:16:50
+Restart Count: 8
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 11, in <module>
+    from brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\brain\router.py", line 1, in <module>
+    from brain.system_brain import VenomBrain
+  File "E:\Advanced Jarvis\project_Venom\brain\system_brain.py", line 10, in <module>
+    from core.config import config
+  File "E:\Advanced Jarvis\project_Venom\core\config.py", line 46, in <module>
+    print("\U0001f680 VENOM BOOST: Performance Optimizations Primed.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Karn\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:11:23
+Restart Count: 1
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:11:31
+Restart Count: 2
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:11:40
+Restart Count: 3
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:11:47
+Restart Count: 4
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:11:56
+Restart Count: 5
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 7: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:12:03
+Restart Count: 6
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 49: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:12:10
+Restart Count: 7
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:12:17
+Restart Count: 8
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:12:24
+Restart Count: 9
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 7: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:12:31
+Restart Count: 10
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:12:38
+Restart Count: 11
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 49: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:12:45
+Restart Count: 12
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 47: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:12:52
+Restart Count: 13
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 84: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:12:59
+Restart Count: 14
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:13:06
+Restart Count: 15
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:13:13
+Restart Count: 16
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:13:20
+Restart Count: 17
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 7: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:13:27
+Restart Count: 18
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:13:34
+Restart Count: 19
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:13:41
+Restart Count: 20
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:13:48
+Restart Count: 21
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 49: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:13:56
+Restart Count: 22
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 84: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:14:03
+Restart Count: 23
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 47: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:14:10
+Restart Count: 24
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 9: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:14:17
+Restart Count: 25
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 86: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:14:24
+Restart Count: 26
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 9: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:14:31
+Restart Count: 27
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 9: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:14:38
+Restart Count: 28
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:14:45
+Restart Count: 29
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 49: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:14:52
+Restart Count: 30
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:14:59
+Restart Count: 31
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:15:06
+Restart Count: 32
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 9: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:15:13
+Restart Count: 33
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:15:20
+Restart Count: 34
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:15:28
+Restart Count: 35
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 47: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:15:35
+Restart Count: 36
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 47: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:15:42
+Restart Count: 37
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:15:49
+Restart Count: 38
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 7: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:15:56
+Restart Count: 39
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 7: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:16:03
+Restart Count: 40
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 84: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:16:10
+Restart Count: 41
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 84: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:16:17
+Restart Count: 42
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 84: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:16:24
+Restart Count: 43
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:16:32
+Restart Count: 44
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:16:39
+Restart Count: 45
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 7: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:16:46
+Restart Count: 46
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 47: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:16:53
+Restart Count: 47
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 86: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:17:01
+Restart Count: 48
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 9: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:17:09
+Restart Count: 49
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 9: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:17:16
+Restart Count: 50
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 7: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:17:24
+Restart Count: 51
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 86: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:17:31
+Restart Count: 52
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 7: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:17:38
+Restart Count: 53
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:17:45
+Restart Count: 54
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:17:52
+Restart Count: 55
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 122: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:18:02
+Restart Count: 56
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 9: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:30:55
+Restart Count: 1
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 119: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 01:31:03
+Restart Count: 2
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 119: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 03:58:50
+Restart Count: 1
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 279: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 03:58:59
+Restart Count: 2
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 279: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 03:59:10
+Restart Count: 3
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 03:59:21
+Restart Count: 4
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 03:59:30
+Restart Count: 5
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 03:59:40
+Restart Count: 6
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 03:59:51
+Restart Count: 7
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:00:00
+Restart Count: 8
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:00:09
+Restart Count: 9
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:00:18
+Restart Count: 10
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:00:26
+Restart Count: 11
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:00:36
+Restart Count: 12
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:00:45
+Restart Count: 13
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:00:55
+Restart Count: 14
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:01:06
+Restart Count: 15
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:01:16
+Restart Count: 16
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:01:26
+Restart Count: 17
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:01:37
+Restart Count: 18
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:01:47
+Restart Count: 19
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:01:57
+Restart Count: 20
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:02:06
+Restart Count: 21
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:02:16
+Restart Count: 22
+Error: Daemon exception: 'charmap' codec can't decode byte 0x8f in position 235: character maps to <undefined>
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:22:42
+Restart Count: 1
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 19, in <module>
+    from modules.voice import VenomVoice
+  File "E:\Advanced Jarvis\project_Venom\modules\voice.py", line 11, in <module>
+    from core.config import config
+ModuleNotFoundError: No module named 'core'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:22:51
+Restart Count: 2
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 19, in <module>
+    from modules.voice import VenomVoice
+  File "E:\Advanced Jarvis\project_Venom\modules\voice.py", line 11, in <module>
+    from core.config import config
+ModuleNotFoundError: No module named 'core'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:22:58
+Restart Count: 3
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 19, in <module>
+    from modules.voice import VenomVoice
+  File "E:\Advanced Jarvis\project_Venom\modules\voice.py", line 11, in <module>
+    from core.config import config
+ModuleNotFoundError: No module named 'core'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:23:08
+Restart Count: 4
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 19, in <module>
+    from modules.voice import VenomVoice
+  File "E:\Advanced Jarvis\project_Venom\modules\voice.py", line 11, in <module>
+    from core.config import config
+ModuleNotFoundError: No module named 'core'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:23:17
+Restart Count: 5
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 19, in <module>
+    from modules.voice import VenomVoice
+  File "E:\Advanced Jarvis\project_Venom\modules\voice.py", line 11, in <module>
+    from core.config import config
+ModuleNotFoundError: No module named 'core'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:31:56
+Restart Count: 1
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 18, in <module>
+    from ai_core.brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\router.py", line 1, in <module>
+    from .system_brain import VenomBrain
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\system_brain.py", line 6, in <module>
+    import aiohttp
+ModuleNotFoundError: No module named 'aiohttp'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:31:59
+Restart Count: 2
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 18, in <module>
+    from ai_core.brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\router.py", line 1, in <module>
+    from .system_brain import VenomBrain
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\system_brain.py", line 6, in <module>
+    import aiohttp
+ModuleNotFoundError: No module named 'aiohttp'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:32:02
+Restart Count: 3
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 18, in <module>
+    from ai_core.brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\router.py", line 1, in <module>
+    from .system_brain import VenomBrain
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\system_brain.py", line 6, in <module>
+    import aiohttp
+ModuleNotFoundError: No module named 'aiohttp'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:32:05
+Restart Count: 4
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 18, in <module>
+    from ai_core.brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\router.py", line 1, in <module>
+    from .system_brain import VenomBrain
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\system_brain.py", line 6, in <module>
+    import aiohttp
+ModuleNotFoundError: No module named 'aiohttp'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:32:08
+Restart Count: 5
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 18, in <module>
+    from ai_core.brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\router.py", line 1, in <module>
+    from .system_brain import VenomBrain
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\system_brain.py", line 6, in <module>
+    import aiohttp
+ModuleNotFoundError: No module named 'aiohttp'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:32:56
+Restart Count: 1
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 18, in <module>
+    from ai_core.brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\router.py", line 4, in <module>
+    from .analytical_engine import engine as math_engine
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\analytical_engine.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:33:01
+Restart Count: 2
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 18, in <module>
+    from ai_core.brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\router.py", line 4, in <module>
+    from .analytical_engine import engine as math_engine
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\analytical_engine.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:33:06
+Restart Count: 3
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 18, in <module>
+    from ai_core.brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\router.py", line 4, in <module>
+    from .analytical_engine import engine as math_engine
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\analytical_engine.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:33:10
+Restart Count: 4
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 18, in <module>
+    from ai_core.brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\router.py", line 4, in <module>
+    from .analytical_engine import engine as math_engine
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\analytical_engine.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:33:15
+Restart Count: 5
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 18, in <module>
+    from ai_core.brain.router import CognitiveRouter
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\router.py", line 4, in <module>
+    from .analytical_engine import engine as math_engine
+  File "E:\Advanced Jarvis\project_Venom\ai_core\brain\analytical_engine.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:34:05
+Restart Count: 1
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 19, in <module>
+    from modules.voice import VenomVoice
+  File "E:\Advanced Jarvis\project_Venom\modules\voice.py", line 5, in <module>
+    import edge_tts
+ModuleNotFoundError: No module named 'edge_tts'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:34:10
+Restart Count: 2
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 19, in <module>
+    from modules.voice import VenomVoice
+  File "E:\Advanced Jarvis\project_Venom\modules\voice.py", line 5, in <module>
+    import edge_tts
+ModuleNotFoundError: No module named 'edge_tts'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:34:15
+Restart Count: 3
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 19, in <module>
+    from modules.voice import VenomVoice
+  File "E:\Advanced Jarvis\project_Venom\modules\voice.py", line 5, in <module>
+    import edge_tts
+ModuleNotFoundError: No module named 'edge_tts'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:34:20
+Restart Count: 4
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 19, in <module>
+    from modules.voice import VenomVoice
+  File "E:\Advanced Jarvis\project_Venom\modules\voice.py", line 5, in <module>
+    import edge_tts
+ModuleNotFoundError: No module named 'edge_tts'
+
+================================================================================
+
+================================================================================
+CRASH REPORT - 2026-01-03 04:34:24
+Restart Count: 5
+Error: Exit code: 1
+Stderr: Traceback (most recent call last):
+  File "E:\Advanced Jarvis\project_Venom\main.py", line 19, in <module>
+    from modules.voice import VenomVoice
+  File "E:\Advanced Jarvis\project_Venom\modules\voice.py", line 5, in <module>
+    import edge_tts
+ModuleNotFoundError: No module named 'edge_tts'
+
+================================================================================

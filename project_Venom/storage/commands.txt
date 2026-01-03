@@ -1,0 +1,7 @@
+Venom Command Protocols:
+- "Look at this": Triggers Vision System (Florence-2).
+- "Open [App Name]": Triggers App Launcher.
+- "Search for [Query]": Triggers Google Search.
+- "Learn" or "Scan Memory": Triggers Knowledge Ingestion Sequence.
+- "System Status": Checks CPU/RAM/Battery.
+- "Shutdown": Deactivates the Symbiote.
