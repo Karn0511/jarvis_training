@@ -1,0 +1,75 @@
+name: ⚡ Performance Testing
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # Run daily at 2 AM UTC
+  workflow_dispatch:
+
+jobs:
+  performance-test:
+    name: 🚀 Performance Benchmarks
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: 📦 Install dependencies
+      run: |
+        pip install -r requirements.txt
+        pip install pytest-benchmark locust
+
+    - name: ⚡ Run benchmarks
+      run: |
+        pytest tests/ -v --benchmark-only --benchmark-json=benchmark.json
+
+    - name: 📊 Upload benchmark results
+      uses: actions/upload-artifact@v3
+      with:
+        name: benchmark-results
+        path: benchmark.json
+
+    - name: 🔥 Load testing with Locust
+      run: |
+        # Start Venom in background
+        python main.py &
+        VENOM_PID=$!
+        sleep 10
+
+        # Run load tests
+        locust -f tests/load_test.py --headless --users 50 --spawn-rate 10 --run-time 60s --host http://localhost:8000 || true
+
+        # Stop Venom
+        kill $VENOM_PID
+
+  memory-profiling:
+    name: 🧠 Memory Profiling
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: 📦 Install profiling tools
+      run: |
+        pip install -r requirements.txt
+        pip install memory-profiler pympler
+
+    - name: 🧠 Profile memory usage
+      run: |
+        python -m memory_profiler main.py --test-mode || true
+
+    - name: 📊 Generate memory report
+      run: |
+        echo "Memory profiling completed"
+        # Add memory reporting logic here

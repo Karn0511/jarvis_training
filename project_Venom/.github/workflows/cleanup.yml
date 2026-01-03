@@ -1,0 +1,51 @@
+name: 🧹 Cleanup Old Resources
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'  # Weekly on Sunday at 3 AM
+  workflow_dispatch:
+
+jobs:
+  cleanup-artifacts:
+    name: 🗑️ Clean Old Artifacts
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+
+    steps:
+    - name: 🗑️ Delete old artifacts
+      uses: c-hive/gha-remove-artifacts@v1
+      with:
+        age: '30 days'
+        skip-recent: 5
+
+  cleanup-docker-images:
+    name: 🐳 Clean Old Docker Images
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+
+    steps:
+    - name: 🗑️ Delete untagged container images
+      uses: actions/delete-package-versions@v4
+      with:
+        package-name: 'venom'
+        package-type: 'container'
+        min-versions-to-keep: 10
+        delete-only-untagged-versions: 'true'
+
+  cleanup-caches:
+    name: 🧹 Clean Build Caches
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+
+    - name: 🧹 Clear outdated caches
+      run: |
+        gh cache delete --all || true
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
