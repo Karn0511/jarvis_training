@@ -1,0 +1,84 @@
+version: '3.8'
+
+# JARVIS AI - Docker Compose Configuration
+# Run: docker-compose up -d
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: jarvis-backend
+    ports:
+      - "8574:8574"
+    environment:
+      # Backend Configuration
+      - JARVIS_BACKEND_URL=http://backend:8574
+      - HOST=0.0.0.0
+      - PORT=8574
+      - DEBUG=true
+      - WORKERS=4
+      
+      # Redis Configuration
+      - REDIS_URL=redis://redis:6379
+      - CACHE_TTL=300
+      
+      # API Keys (add your keys here)
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY:-}
+      
+      # Feature Flags
+      - ENABLE_SHELL_EXECUTION=false
+      - ENABLE_QUANTUM=false
+      - USE_LOCAL_LLM=true
+      
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app/backend
+      - ./cli:/app/cli
+      - jarvis_logs:/app/logs
+      - jarvis_data:/app/data
+      - jarvis_cache:/app/cache
+    restart: unless-stopped
+    networks:
+      - jarvis-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8574/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  redis:
+    image: redis:7-alpine
+    container_name: jarvis-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - jarvis-network
+
+volumes:
+  redis_data:
+    driver: local
+  jarvis_logs:
+    driver: local
+  jarvis_data:
+    driver: local
+  jarvis_cache:
+    driver: local
+
+networks:
+  jarvis-network:
+    driver: bridge

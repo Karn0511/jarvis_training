@@ -1,5 +1,5 @@
 # Production-Ready Dockerfile for Venom AI
-FROM python:3.10-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 
@@ -31,7 +31,7 @@ EXPOSE 8000 8501
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')" || exit 1
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/state')" || exit 1
 
 # Run with daemon for auto-restart
 CMD ["python", "venom_daemon.py"]

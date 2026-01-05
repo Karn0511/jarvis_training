@@ -1,0 +1,116 @@
+{
+  "recommendations": [
+    // ========================
+    // PYTHON ESSENTIALS
+    // ========================
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.black-formatter",
+    "ms-python.debugpy",
+    "ms-python.pylint",
+    "ms-python.isort",
+
+    // ========================
+    // AI & COPILOT
+    // ========================
+    "github.copilot",
+    "github.copilot-chat",
+    "visualstudioexptteam.vscodeintellicode",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+
+    // ========================
+    // DOCKER & CONTAINERS
+    // ========================
+    "ms-azuretools.vscode-docker",
+    "ms-vscode-remote.remote-containers",
+
+    // ========================
+    // GIT & VERSION CONTROL
+    // ========================
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "donjayamanne.githistory",
+
+    // ========================
+    // WEB DEVELOPMENT
+    // ========================
+    "angular.ng-template",
+    "johnpapa.angular2",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.npm-intellisense",
+
+    // ========================
+    // TESTING & QUALITY
+    // ========================
+    "littlefoxteam.vscode-python-test-adapter",
+    "hbenl.vscode-test-explorer",
+    "ryanluker.vscode-coverage-gutters",
+
+    // ========================
+    // PRODUCTIVITY
+    // ========================
+    "editorconfig.editorconfig",
+    "christian-kohler.path-intellisense",
+    "aaron-bond.better-comments",
+    "gruntfuggly.todo-tree",
+    "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker",
+
+    // ========================
+    // DATA & VISUALIZATION
+    // ========================
+    "ms-toolsai.jupyter",
+    "ms-toolsai.vscode-jupyter-cell-tags",
+    "ms-toolsai.jupyter-keymap",
+    "ms-toolsai.jupyter-renderers",
+
+    // ========================
+    // TERMINAL & SHELL
+    // ========================
+    "ms-vscode.powershell",
+
+    // ========================
+    // THEME & ICONS
+    // ========================
+    "pkief.material-icon-theme",
+    "zhuangtongfa.material-theme",
+    "monokai.theme-monokai-pro-vscode",
+
+    // ========================
+    // YAML & CONFIG
+    // ========================
+    "redhat.vscode-yaml",
+    "redhat.vscode-xml",
+    "dotjoshjohnson.xml",
+
+    // ========================
+    // MARKDOWN
+    // ========================
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+
+    // ========================
+    // REST & API
+    // ========================
+    "humao.rest-client",
+    "rangav.vscode-thunder-client",
+
+    // ========================
+    // CODE ANALYSIS
+    // ========================
+    "sonarsource.sonarlint-vscode",
+    "codestream.codestream",
+
+    // ========================
+    // LIVE PREVIEW
+    // ========================
+    "ms-vscode.live-server",
+    "ritwickdey.liveserver"
+  ],
+  "unwantedRecommendations": [
+    "ms-python.anaconda-extension-pack"
+  ]
+}

@@ -76,7 +76,10 @@ export class AppComponent implements OnInit {
 
   submitCommand() {
     if (this.commandInput.trim()) {
-      this.venom.sendCommand(this.commandInput);
+      this.venom.sendCommand(this.commandInput).subscribe({
+        next: () => console.log('Command sent'),
+        error: (err) => console.error('Command failed', err)
+      });
       this.commandInput = '';
     }
   }

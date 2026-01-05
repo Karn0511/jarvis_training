@@ -1,0 +1,19 @@
+# Minimal runtime dependencies (zero-cost local mode)
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-dotenv==1.0.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+pyyaml==6.0.1
+click==8.1.7
+
+# Optional dev tooling (install separately if needed)
+# rich==13.7.0
+# colorama==0.4.6
+# prompt-toolkit==3.0.43
+# pytest==7.4.3
+# pytest-asyncio==0.21.1
+# black==23.12.1
+
+# Removed: openai, anthropic, aioredis, httpx (external/network cost)
+

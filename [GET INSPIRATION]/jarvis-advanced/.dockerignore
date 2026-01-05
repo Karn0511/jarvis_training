@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Data
+data/
+cache/
+*.db
+*.sqlite
+
+# Git
+.git/
+.gitignore
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose*.yml
+
+# Documentation
+*.md
+docs/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Tests
+tests/
+pytest.ini
+.pytest_cache/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Temporary
+tmp/
+temp/
+.cache/
+
+# Frontend (if not needed)
+frontend/
+node_modules/
+
+# Scripts (optional)
+scripts/
+
+# Unnecessary files
+cleanup.sh
+quickstart.*
+setup_new.py

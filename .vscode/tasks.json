@@ -1,0 +1,374 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        // ========================
+        // VENOM: RUN TASKS
+        // ========================
+        {
+            "label": "🐍 Venom: Run Main",
+            "type": "shell",
+            "command": "${workspaceFolder}/project_Venom/.venv/Scripts/python.exe",
+            "args": [
+                "${workspaceFolder}/project_Venom/main.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "focus": true,
+                "echo": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🔥 Venom: Start Daemon",
+            "type": "shell",
+            "command": "${workspaceFolder}/project_Venom/.venv/Scripts/python.exe",
+            "args": [
+                "${workspaceFolder}/project_Venom/venom_daemon.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "focus": false
+            }
+        },
+        {
+            "label": "👁️ Venom: Launch HUD",
+            "type": "shell",
+            "command": "${workspaceFolder}/project_Venom/.venv/Scripts/streamlit.exe",
+            "args": [
+                "run",
+                "${workspaceFolder}/project_Venom/venom_hud.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "🌐 Venom: Start Web Server",
+            "type": "shell",
+            "command": "${workspaceFolder}/project_Venom/.venv/Scripts/python.exe",
+            "args": [
+                "${workspaceFolder}/project_Venom/web_server.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "🚀 Venom: Launch ALL",
+            "dependsOn": [
+                "🔥 Venom: Start Daemon",
+                "👁️ Venom: Launch HUD",
+                "🌐 Venom: Start Web Server"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+
+        // ========================
+        // VENOM: TESTING
+        // ========================
+        {
+            "label": "🧪 Venom: Run Tests",
+            "type": "shell",
+            "command": "${workspaceFolder}/project_Venom/.venv/Scripts/pytest.exe",
+            "args": [
+                "-v",
+                "-s",
+                "tests"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🧪 Venom: Run Phase2 Tests",
+            "type": "shell",
+            "command": "${workspaceFolder}/project_Venom/.venv/Scripts/python.exe",
+            "args": [
+                "test_phase2.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "group": "test",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🧪 Venom: Startup Test",
+            "type": "shell",
+            "command": "${workspaceFolder}/project_Venom/.venv/Scripts/python.exe",
+            "args": [
+                "startup_test.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "group": "test",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🔬 Venom: Test with Coverage",
+            "type": "shell",
+            "command": "${workspaceFolder}/project_Venom/.venv/Scripts/pytest.exe",
+            "args": [
+                "--cov=.",
+                "--cov-report=html",
+                "--cov-report=term",
+                "tests"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "group": "test",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+
+        // ========================
+        // VENOM: ENVIRONMENT
+        // ========================
+        {
+            "label": "📦 Venom: Install Requirements",
+            "type": "shell",
+            "command": "${workspaceFolder}/project_Venom/.venv/Scripts/pip.exe",
+            "args": [
+                "install",
+                "-r",
+                "requirements.txt",
+                "--upgrade"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "🔧 Venom: Create Virtual Environment",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "-m",
+                "venv",
+                ".venv"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "🧹 Venom: Clean Cache",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "Get-ChildItem -Path . -Include __pycache__,*.pyc,.pytest_cache,.mypy_cache -Recurse -Force | Remove-Item -Force -Recurse"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+
+        // ========================
+        // VENOM: MAINTENANCE
+        // ========================
+        {
+            "label": "📊 Venom: Generate Analytics",
+            "type": "shell",
+            "command": "${workspaceFolder}/project_Venom/.venv/Scripts/python.exe",
+            "args": [
+                "-c",
+                "from modules.analytics import VenomAnalytics; va = VenomAnalytics(); va.generate_report()"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom",
+                "env": {
+                    "PYTHONPATH": "${workspaceFolder}/project_Venom"
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🔍 Venom: Check System Health",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-File",
+                "${workspaceFolder}/project_Venom/venom_control.ps1",
+                "-Action",
+                "status"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🐛 Venom: Lint Code",
+            "type": "shell",
+            "command": "${workspaceFolder}/project_Venom/.venv/Scripts/pylint.exe",
+            "args": [
+                "**/*.py",
+                "--rcfile=.pylintrc"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "problemMatcher": ["$pylint"],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "💅 Venom: Format Code",
+            "type": "shell",
+            "command": "${workspaceFolder}/project_Venom/.venv/Scripts/black.exe",
+            "args": [
+                ".",
+                "--line-length=120"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+
+        // ========================
+        // DOCKER OPERATIONS
+        // ========================
+        {
+            "label": "🐳 Docker: Build Venom",
+            "type": "shell",
+            "command": "docker",
+            "args": [
+                "build",
+                "-t",
+                "venom:latest",
+                "."
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "🐳 Docker: Run Venom",
+            "type": "shell",
+            "command": "docker-compose",
+            "args": [
+                "up",
+                "-d"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "🐳 Docker: Stop Venom",
+            "type": "shell",
+            "command": "docker-compose",
+            "args": [
+                "down"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project_Venom"
+            },
+            "problemMatcher": []
+        },
+
+        // ========================
+        // JARVIS PROJECTS
+        // ========================
+        {
+            "label": "🤖 Jarvis Advanced: Run",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "backend/main.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/[GET INSPIRATION]/jarvis-advanced"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🤖 Jarvis 2025: Run",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "main.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/[GET INSPIRATION]/Jarvis-2025-master"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

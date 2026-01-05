@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: jarvis-backend
+    ports:
+      - "8574:8574"
+    environment:
+      - JARVIS_BACKEND_URL=http://backend:8574
+      - REDIS_URL=redis://redis:6379
+      - HOST=0.0.0.0
+      - PORT=8574
+      - DEBUG=true
+      - ENABLE_SHELL_EXECUTION=false
+      - USE_LOCAL_LLM=true
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - ../backend:/app/backend
+      - ../cli:/app/cli
+      - jarvis_logs:/app/logs
+      - jarvis_data:/app/data
+      - jarvis_cache:/app/cache
+    restart: unless-stopped
+    networks:
+      - jarvis-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: jarvis-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - jarvis-network
+
+volumes:
+  redis_data:
+    driver: local
+  jarvis_logs:
+    driver: local
+  jarvis_data:
+    driver: local
+  jarvis_cache:
+    driver: local
+
+networks:
+  jarvis-network:
+    driver: bridge

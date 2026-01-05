@@ -1,0 +1,167 @@
+{
+    // ========================
+    // TERMINAL CONFIGURATION
+    // ========================
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "args": [
+                "-NoExit",
+                "-Command",
+                "cd 'e:\\Advanced Jarvis\\project_Venom'"
+            ]
+        },
+        "PowerShell (Root)": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        }
+    },
+    "terminal.integrated.defaultLocation": "view",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+
+    // ========================
+    // PYTHON CONFIGURATION
+    // ========================
+    "python.defaultInterpreterPath": "${workspaceFolder}/project_Venom/.venv/Scripts/python.exe",
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "python.languageServer": "Pylance",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/project_Venom",
+        "${workspaceFolder}/project_Venom/brain",
+        "${workspaceFolder}/project_Venom/core",
+        "${workspaceFolder}/project_Venom/modules"
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=120"
+    ],
+
+    // ========================
+    // EDITOR CONFIGURATION
+    // ========================
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "editor.rulers": [80, 120],
+    "editor.wordWrap": "on",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggestSelection": "first",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+
+    // ========================
+    // FILE MANAGEMENT
+    // ========================
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/dist": true,
+        "**/tmp": true,
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/.pytest_cache": true,
+        "**/.venv": false,
+        "**/node_modules": true,
+        "**/.mypy_cache": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/.git": true,
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/.venv": true,
+        "**/envJarvis": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/dist/**": true,
+        "**/node_modules/**": true,
+        "**/__pycache__/**": true,
+        "**/.venv/**": true
+    },
+    "files.associations": {
+        "*.py": "python",
+        "*.sh": "shellscript",
+        "*.ps1": "powershell",
+        "*.yaml": "yaml",
+        "*.yml": "yaml"
+    },
+
+    // ========================
+    // GIT CONFIGURATION
+    // ========================
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+
+    // ========================
+    // JAVASCRIPT/TYPESCRIPT
+    // ========================
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+
+    // ========================
+    // INTELLISENSE & AI
+    // ========================
+    "github.copilot.enable": {
+        "*": true,
+        "python": true,
+        "javascript": true,
+        "typescript": true
+    },
+
+    // ========================
+    // PERFORMANCE
+    // ========================
+    "files.maxMemoryForLargeFilesMB": 4096,
+    "search.followSymlinks": false,
+
+    // ========================
+    // DEBUGGING
+    // ========================
+    "debug.console.fontSize": 14,
+    "debug.console.lineHeight": 20,
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "debug.showBreakpointsInOverviewRuler": true,
+
+    // ========================
+    // VENOM PROJECT SPECIFIC
+    // ========================
+    "workbench.colorCustomizations": {
+        "terminal.background": "#0C0C0C",
+        "terminal.foreground": "#00FF41",
+        "terminalCursor.background": "#00FF41",
+        "terminalCursor.foreground": "#00FF41"
+    },
+    "workbench.colorTheme": "Abyss"
+}

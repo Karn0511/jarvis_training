@@ -52,7 +52,7 @@ spec:
       containers:
       - name: venom
         image: venom:latest
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         ports:
         - containerPort: 8000
           name: api
@@ -90,7 +90,7 @@ spec:
             cpu: "2000m"
         livenessProbe:
           httpGet:
-            path: /health
+            path: /api/state
             port: 8000
           initialDelaySeconds: 30
           periodSeconds: 10
@@ -98,7 +98,7 @@ spec:
           failureThreshold: 3
         readinessProbe:
           httpGet:
-            path: /health
+            path: /api/state
             port: 8000
           initialDelaySeconds: 10
           periodSeconds: 5

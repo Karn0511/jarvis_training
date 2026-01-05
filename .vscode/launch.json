@@ -1,0 +1,204 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // ========================
+    // VENOM PROJECT - PYTHON
+    // ========================
+    {
+      "name": "🐍 Venom: Main (Interactive)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/project_Venom/main.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}/project_Venom",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/project_Venom"
+      },
+      "python": "${workspaceFolder}/project_Venom/.venv/Scripts/python.exe"
+    },
+    {
+      "name": "🔥 Venom: Daemon (Background)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/project_Venom/venom_daemon.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}/project_Venom",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/project_Venom"
+      }
+    },
+    {
+      "name": "👁️ Venom: HUD (Streamlit)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": [
+        "run",
+        "${workspaceFolder}/project_Venom/venom_hud.py"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}/project_Venom"
+    },
+    {
+      "name": "🌐 Venom: Web Server",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/project_Venom/web_server.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}/project_Venom"
+    },
+    {
+      "name": "🧪 Venom: Phase 2 Test",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/project_Venom/test_phase2.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}/project_Venom"
+    },
+    {
+      "name": "🧠 Debug: Brain Module Only",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "brain.system_brain",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}/project_Venom",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/project_Venom"
+      }
+    },
+    {
+      "name": "⚡ Debug: Current Python File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "cwd": "${fileDirname}"
+    },
+    {
+      "name": "🔬 Venom: Pytest (All Tests)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "-v",
+        "-s",
+        "${workspaceFolder}/project_Venom/tests"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}/project_Venom"
+    },
+    {
+      "name": "🔬 Venom: Pytest (Current File)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "-v",
+        "-s",
+        "${file}"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+
+    // ========================
+    // JARVIS PROJECTS
+    // ========================
+    {
+      "name": "🤖 Jarvis Advanced",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/[GET INSPIRATION]/jarvis-advanced/backend/main.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}/[GET INSPIRATION]/jarvis-advanced"
+    },
+    {
+      "name": "🤖 Jarvis 2025",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/[GET INSPIRATION]/Jarvis-2025-master/main.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}/[GET INSPIRATION]/Jarvis-2025-master"
+    },
+
+    // ========================
+    // WEB/NODE CONFIGURATIONS
+    // ========================
+    {
+      "name": "🌐 Launch Chrome (Angular)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}/project_Venom/frontend",
+      "sourceMaps": true
+    },
+    {
+      "name": "🌐 Launch Chrome (Venom Interface)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:8000/venom_interface.html",
+      "webRoot": "${workspaceFolder}/project_Venom"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Node: Launch Program",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/app.js"
+    },
+
+    // ========================
+    // ATTACH CONFIGURATIONS
+    // ========================
+    {
+      "name": "🔗 Python: Attach to Process",
+      "type": "debugpy",
+      "request": "attach",
+      "processId": "${command:pickProcess}",
+      "justMyCode": false
+    },
+    {
+      "name": "🔗 Python: Remote Attach",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5678
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/project_Venom",
+          "remoteRoot": "."
+        }
+      ]
+    }
+  ],
+  "compounds": [
+    {
+      "name": "🚀 Venom: Full System",
+      "configurations": [
+        "🐍 Venom: Main (Interactive)",
+        "🔥 Venom: Daemon (Background)",
+        "👁️ Venom: HUD (Streamlit)"
+      ],
+      "stopAll": true,
+      "presentation": {
+        "hidden": false,
+        "group": "Venom",
+        "order": 1
+      }
+    }
+  ]
+}
