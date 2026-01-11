@@ -1,204 +1,53 @@
-# Environment Variables & Secrets
-.env
-.env.local
-.env.*.local
-.venv/
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.venv
 venv/
 ENV/
-env/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
 
-# API Keys and Credentials
-*.key
-*.pem
-*.p12
-secrets.json
-credentials.json
-config/secrets/
-
-# IDE and Editor
-.vscode/settings.json
+# IDE
+.vscode/
 .idea/
 *.swp
 *.swo
 *~
 .DS_Store
-.project
-.classpath
-*.sublime-project
-*.sublime-workspace
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-pip-log.txt
-pip-delete-this-directory.txt
+# Testing
 .tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
-htmlcov/
+coverage/
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# Environments
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# Node.js
-node_modules/
-npm-debug.log
-yarn-error.log
-package-lock.json
-yarn.lock
-
-# Build artifacts
-dist/
-build/
-*.whl
-*.egg-info/
-
-# Temporary files
+# Temporary/Runtime
+*.log
 *.tmp
 *.bak
-*.swp
-~*
-.~*
-temp/
-tmp/
+storage/logs/*
+storage/crash_report.log
+storage/venom_state.json
+storage/venom_live_log.json
+storage/vitals/*
+storage/profiles/*
+storage/neural/*
+storage/assets/*.png
+storage/assets/*.jpg
 
-# Logs
-*.log
-logs/
-*.log.*
-
-# System files
-Thumbs.db
-.DS_Store
-Desktop.ini
-$RECYCLE.BIN/
-
-# Database files
+# Database & Data
 *.db
 *.sqlite
 *.sqlite3
-*.rdb
-
-# Cache files
-.cache/
-*.cache
-.mypy_cache/
-.pytest_cache/
-
-# Docker
-docker-compose.override.yml
-.docker/
-
-# Kubernetes
-k8s/*.yaml.tmp
-k8s/*.yaml.bak
-
-# Storage & Runtime
-project_Venom/storage/crash_report.log
-project_Venom/storage/venom_state.json
-project_Venom/storage/venom_input.json
-project_Venom/storage/venom_live_log.json
-project_Venom/storage/neural/memory/*
-project_Venom/storage/logs/*
-project_Venom/storage/analytics/*
-project_Venom/storage/vitals/*
-project_Venom/storage/profiles/*
-project_Venom/storage/assets/*.png
-project_Venom/storage/assets/*.jpg
-
-# Data files
 data/
-*.csv
-*.xlsx
-*.json.bak
 
-# Audio files (except documentation samples)
-*.mp3
-*.wav
-*.flac
-
-# Large files
+# Other
+node_modules/
 *.zip
-*.tar.gz
-*.rar
-*.7z
-project_Venom.zip
-
-# IDE-specific
-.vscode/launch.json
-.vscode/tasks.json
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Testing artifacts
-.tox/
-.coverage
-coverage/
-htmlcov/
-.pytest_cache/
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Yarn
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
-
-# Playwright
-.playwright/
-
-# Mock data
-test_data/
-*.fixture.json
+npm-debug.log
